@@ -1,0 +1,47 @@
+! make sure you have Node.js and npm installed on your laptops. 
+! make sure you also have npx (npm install npx)
+! also install Docker and make sure it is running when using Docker commands
+! i recommended intalling Better Comments extension so that this text is easier to see
+
+* NEXT.js
+- installing npm on your machines varies, so do quick google search to see ho = sudo 
+
+- 'npm run dev': starts the Next.js app in development mode. it will hot-reload when you make changes
+- 'npm run build': will produce a production-ready build of the app
+
+- 'npm start': after building the app, you can start the production server with this command
+
+- 'npm help': shows usage information about a command
+
+* DOCKER
+- 'docker run -p 3000:3000 b1tmus1c': runs docker enviroment so if 'npm run dev' doens't work use this
+
+* VERCEL (https://vercel.com/coders-of-akron/b1tmus1c)
+- 'npm install -g vercel': to install vercel
+
+- 'vercel login': authenticate with your vercel account
+- 'vercel logout: log out from the current session
+
+- 'vercel': deploy project
+- 'vercel --prod': deploy project to production domain
+- 'vercel dev': start development server locally
+
+- 'vercel help': show usage information about a command or the CLI
+
+* PRISMA (see prisma folder and then schema.prisma to create tables)
+- 'npm install -g prisma': to install prisma
+
+- 'npx prisma studio': opens Prisma Studio, a modern database GUI to view and edit your data.
+- 'npx primsa generate': whenever you make changes to your prisma schema, you must run a migration, 
+                         then run prisma generate to update the generated type generations, which 
+                         live in the node_modules/.prisma/client directory.
+
+
+- 'npx prisma db push': pushes the Prisma schema state to the database without using migrations
+- 'npx prisma db pull': introspects the database and saves the result to the Prisma schema.
+
+- 'npx prisma format': formats the 'schema.prisma' file
+
+- 'npx prisma help': show usage information about a command or the CLI
+
+
